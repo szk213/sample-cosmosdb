@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  sample-cosmosdb:
+    build: ./
+    tty: true
+    stdin_open: true
+    volumes:
+      - type: bind
+        source: "../"
+        target: "/work"
+    networks:
+      - ollama
+
+networks:
+  ollama:
+    external: true

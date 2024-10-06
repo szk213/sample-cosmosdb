@@ -1,0 +1,11 @@
+{
+  "models": [
+    {
+      "title": "local",
+      "provider": "ollama",
+      "apiBase": "http://ollama:11434",
+      "model": "llama3.2"
+    }
+  ],
+  "allowAnonymousTelemetry": false
+}
